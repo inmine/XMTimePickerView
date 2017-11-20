@@ -1,5 +1,5 @@
 # XMTimePickerView
-时间选择器：年月  包括至今
+时间段选择器：年月  包括至今
 
 ![Platform](https://wx1.sinaimg.cn/mw690/e067b31fgy1flond3n1p0j208c0i2wet.jpg)
 
@@ -12,13 +12,13 @@
 ```
 XMTimePickerView *picker = [[XMTimePickerView alloc] init];
 
-    picker.delegate = self;
+picker.delegate = self;
     
 //    picker.isShowToday = NO; // 是否显示今天
 
 //    picker.minimumDate = [self xm_dataWithTime:@"1493568000000"];  // 最小值时间时间戳
 
-    [picker show];
+[picker show];
 ```
 
 # 二，主要属性
