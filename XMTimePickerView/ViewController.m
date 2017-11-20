@@ -18,8 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"XM时间选择器";
+    
     UIButton *btn = [[UIButton alloc] init];
     btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"点我啊" forState:UIControlStateNormal];
     btn.frame = CGRectMake(80, 200, 100, 44);
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
@@ -29,8 +32,8 @@
     
     XMTimePickerView *picker = [[XMTimePickerView alloc] init];
     picker.delegate = self;
-//    picker.isShowToday = NO;
-//    picker.minimumDate = [self xm_dataWithTime:@"1493568000000"];
+//    picker.isShowToday = NO; // 是否显示今天
+//    picker.minimumDate = [self xm_dataWithTime:@"1493568000000"];  // 最小值时间时间戳
     [picker show];
 }
 
